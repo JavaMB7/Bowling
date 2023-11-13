@@ -21,4 +21,12 @@ public class GameTest {
 		}
 		assertEquals(0, game.score());
 	}
+	
+	@Test
+	void test_vingt_un() {
+		for(int i = 0; i<20; i++) {
+			game.roll(1);
+		}
+		assertEquals(20, game.score());
+	}
 }
