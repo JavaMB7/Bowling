@@ -29,4 +29,15 @@ public class GameTest {
 		}
 		assertEquals(20, game.score());
 	}
+	
+	@Test
+	void test_dix_un_et_dix_deux() {
+		for(int i = 0; i<10; i++) {
+			game.roll(1);
+		}
+		for(int i = 0; i<10; i++) {
+			game.roll(2);
+		}
+		assertEquals(30, game.score());
+	}
 }
